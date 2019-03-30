@@ -8,6 +8,7 @@ import edu.smith.cs.csc212.adtr.ListADT;
  *
  */
 public class BubbleSort {
+	
 
 	/**
 	 * Bubble Sort is done! And it is easy to do in-place.
@@ -28,6 +29,7 @@ public class BubbleSort {
 				break;
 			}
 			N = N - 1;
+			
 		}
 	}
 }
