@@ -15,6 +15,7 @@ public class BubbleSort {
 	 * @param input - the list to be sorted.
 	 */
 	public static void bubbleSort(ListADT<Integer> input) {
+	        
 		int N = input.size();
 		
 		while(true) {
@@ -22,14 +23,14 @@ public class BubbleSort {
 			for (int i=0; i<N-1; i++) {
 				if (input.getIndex(i) > input.getIndex(i+1)) {
 					input.swap(i, i+1);
+//					System.out.println("Sorting via bubbleSort: " + input);
 					sorted = false;
+					}
 				}
-			}
 			if (sorted) {
 				break;
 			}
 			N = N - 1;
-			
+			}
 		}
 	}
-}
